@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+body{
+    font-family: Arial;
+    background:#f3eefc;
+    padding:20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card img{
+    width: 100%;
+    aspect-ratio: 3 / 4;   /* FIX: Same shape for all images */
+    object-fit: cover;     /* FITS perfectly */
+    border-radius: 8px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 14px;
+    background:#3498db;
+    color:white;
+    font-size:14px;
+    border-radius:5px;
+    text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<h2>Assignment 1 Movie Cards</h2>
+
+<div class="movie-container">
+
+    <div class="card">
+        <img src="Screenshot_19-11-2025_233636_www.bing.com.jpeg" alt="doctor strange">
+        <h3>Doctor Strange 2</h3>
+        <p>Rating: 4.5</p>
+        <a class="btn">Book now</a>
+    </div>
+
+    <div class="card">
+        <img src="Screenshot_19-11-2025_233745_www.bing.com.jpeg" alt="bhool bhulaiya 2">
+        <h3>Bhool Bhulaiyaa 2</h3>
+        <p>Rating: 4.5</p>
+        <a class="btn">Book now</a>
+    </div>
+
+    <div class="card">
+        <img src="Screenshot_19-11-2025_23357_www.bing.com.jpeg" alt="jayeshbhai jordaar">
+        <h3>Jayeshbhai Jordaar</h3>
+        <p>Rating: 4.5</p>
+        <a class="btn">Book now</a>
+    </div>
+
+    <div class="card">
+        <img src="Screenshot_19-11-2025_233333_www.bing.com.jpeg" alt="jaurassic world">
+        <h3>Jurassic World</h3>
+        <p>Rating: 4.5</p>
+        <a class="btn">Book now</a>
+    </div>
+
+    <div class="card">
+        <img src="1132485.jpg" alt="KGF 2">
+        <h3>KGF 2</h3>
+        <p>Rating: 4.5</p>
+        <a class="btn">Book now</a>
+    </div>
+
+    <div class="card">
+        <img src="5664292.jpg" alt="RRR">
+        <h3>RRR</h3>
+        <p>Rating: 4.5</p>
+        <a class="btn">Book now</a>
+    </div>
+
+</div>
+
+</body>
+</html>
